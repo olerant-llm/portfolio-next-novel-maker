@@ -1,0 +1,27 @@
+@title: あいさつテスト
+@grade: 3
+@theme: adv
+@version: 1
+
+// 設計書付録Aの最小サンプル + エスケープの使用例1行
+
+# scene: main
+@bg 教室
+アミ(笑顔): おはよう!
+タケル: …おう。
+* 元気に返す -> genki
+* だまっている -> damaru
+
+# scene: genki
+@set kizuna += 1
+アミ(笑顔): 今日もいい天気だね!
+タケル: 縦棒＼|って記号は、ルビのはじまりの意味らしいぞ。
+@jump owari
+
+# scene: damaru
+アミ(焦り): あれ、どうしたの?
+@jump owari
+
+# scene: owari
+@emit result
+@end

@@ -1,0 +1,21 @@
+{
+  "name": "next-novel-maker",
+  "version": "0.0.0",
+  "private": true,
+  "description": "台本テキストをADV風/SNS風で再生し、変数を外部Webアプリと共有できるノベル教材エンジン",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm --workspace @nnm/core run test",
+    "lint": "tsx packages/core/src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10",
+    "yaml": "^2.9.0"
+  }
+}

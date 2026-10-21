@@ -1,0 +1,12 @@
+# 画像ファイルは未配置(立ち絵素材の出所は未決事項#2。決まり次第このフォルダに置く)
+id: takeru
+name: タケル
+persona: >
+  小4男子。スマホやゲームに詳しく、少し強がりだが根は素直。指摘されるとムキになるが、納得すれば行動を変えられる。
+default: ふつう
+position: right
+expressions:
+  ふつう:  takeru_normal.png
+  笑顔:    takeru_smile.png
+  怒り:    takeru_angry.png
+  焦り:    takeru_sweat.png

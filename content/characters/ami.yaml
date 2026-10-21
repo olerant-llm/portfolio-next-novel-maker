@@ -1,0 +1,13 @@
+# 画像ファイルは未配置(立ち絵素材の出所は未決事項#2。決まり次第このフォルダに置く)
+id: ami
+name: アミ
+persona: >
+  小4女子。明るく面倒見が良い。相手を頭ごなしに否定せず、一緒に考える話し方。
+default: ふつう
+position: left
+expressions:
+  ふつう:  ami_normal.png
+  笑顔:    ami_smile.png
+  怒り:    ami_angry.png
+  焦り:    ami_sweat.png
+  悲しみ:  ami_sad.png

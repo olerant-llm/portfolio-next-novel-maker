@@ -1,0 +1,7 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+
+# Vitest uses esbuild to transform TypeScript test files.
+allowBuilds:
+  esbuild: true

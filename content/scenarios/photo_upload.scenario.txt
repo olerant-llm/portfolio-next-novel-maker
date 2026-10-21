@@ -1,0 +1,32 @@
+@title: 写真、勝手にアップしていいの?
+@grade: 4
+@theme: sns
+@version: 1
+
+// 設計書3.2のサンプル(フル機能版の見本: 選択肢・変数・条件分岐・手動ルビ・外部送出)
+
+# scene: intro
+@bg 教室
+アミ(笑顔): タケルくん、その|写真《しゃしん》アップしちゃうの?
+タケル(怒り): 別にいいだろ、自分のスマホなんだから!
+* 「ちょっと待って」と言う -> stop_him
+* 何も言わない -> ignore
+
+# scene: stop_him
+@set trust += 1
+アミ: ありがとう。写真には|写《うつ》っている人の気持ちがあるんだよ。
+@jump ending
+
+# scene: ignore
+@set trust -= 1
+タケル: ほら、アップしたぞ。
+@jump ending
+
+# scene: ending
+@if trust >= 1
+  アミ(笑顔): 今日は良い勉強になったね。
+@else
+  アミ(焦り): あとで大変なことになるかも…。
+@endif
+@emit result
+@end
